@@ -1,25 +1,15 @@
-import CountBtn from "@/components/count-btn";
-import ReactSVG from "@/assets/react.svg";
-import { Badge } from "@/components/ui/badge";
+import CounterManager from "./components/CounterManager";
 
 function App() {
   return (
-    <main className="flex flex-col items-center justify-center h-screen">
-      <div className="flex flex-col items-center gap-y-4">
-        <div className="inline-flex items-center gap-x-4">
-          <img src={ReactSVG} alt="React Logo" className="w-32" />
-          <span className="text-6xl">+</span>
-          <img src={"/vite.svg"} alt="Vite Logo" className="w-32" />
-        </div>
-        <a
-          href="https://ui.shadcn.com"
-          rel="noopener noreferrer nofollow"
-          target="_blank"
-        >
-          <Badge variant="outline">shadcn/ui</Badge>
-        </a>
-        <CountBtn />
+    <main className="container py-8 space-y-8">
+      <div className="space-y-2 text-center">
+        <h1 className="text-4xl font-bold font-greatVibes">Counters and many counters</h1>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          I made it for personal needs because I was in need of counting multiple things together.
+        </p>
       </div>
+      <CounterManager />
     </main>
   );
 }

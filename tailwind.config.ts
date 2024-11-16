@@ -13,6 +13,9 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        greatVibes: ["Great Vibes","cursive",]
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
