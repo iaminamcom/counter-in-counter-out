@@ -28,7 +28,7 @@ const CountBtn: React.FC<CountBtnProps> = ({ name, id, count, color, onCountChan
 
             <div className="text-2xl">{name}</div>
 
-            <Button onClick={() => onDelete(id)} size="icon" variant='destructive' className="absolute top-4 right-4 opacity-0 group-hover/counter:opacity-100 transition">
+            <Button onClick={() => onDelete(id)} size="icon" variant='destructive' className="absolute top-1 right-1 opacity-0 group-hover/counter:opacity-100 transition">
                 <Trash/>
             </Button>
         </div>
